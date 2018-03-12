@@ -12,5 +12,21 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "BaseModel": {
+    "dataSource": null,
+    "public": false
+  },
+  "Exchange": {
+    "dataSource": "mysqlTransactional",
+    "public": false
+  },
+  "Segment": {
+    "dataSource": "mysqlTransactional",
+    "public": false
+  },
+  "Script": {
+    "dataSource": "mysqlTransactional",
+    "public": false
   }
 }

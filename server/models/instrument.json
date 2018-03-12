@@ -1,0 +1,38 @@
+{
+  "name": "Instrument",
+  "base": "BaseModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "instrumentToken": {
+      "type": "string",
+      "required": true
+    },
+    "exchangeToken": {
+      "type": "string",
+      "required": true
+    },
+    "tradingSymbol": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "isActiveForTrading": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
