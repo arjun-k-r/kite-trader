@@ -1,6 +1,6 @@
 {
   "name": "Segment",
-  "base": "BaseModel",
+  "base": "BaseMysqlTransactionalModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true

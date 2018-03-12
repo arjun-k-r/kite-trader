@@ -1,6 +1,6 @@
 {
   "name": "Exchange",
-  "base": "BaseModel",
+  "base": "BaseMysqlTransactionalModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
