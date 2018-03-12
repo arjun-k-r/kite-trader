@@ -28,5 +28,13 @@
   "Script": {
     "dataSource": "mysqlTransactional",
     "public": false
+  },
+  "BaseMysqlTransactionalModel": {
+    "dataSource": null,
+    "public": false
+  },
+  "BaseRedisModel": {
+    "dataSource": null,
+    "public": false
   }
 }
