@@ -1,27 +1,36 @@
 {
   "name": "kite-trader",
-  "version": "0.0.1",
-  "description": "An algorithmic trading platform for Zerodha's Kite-Connect",
-  "main": "server.js",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "helmet": "^1.3.0",
+    "loopback": "^3.0.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^4.0.0",
+    "loopback-connector-kv-redis": "^1.1.0",
+    "loopback-connector-mysql": "^2.4.1",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "nsp": "^2.1.0"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ketansp/kite-trader.git"
+    "type": "",
+    "url": ""
   },
-  "author": "Ketan Patil",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ketansp/kite-trader/issues"
-  },
-  "homepage": "https://github.com/ketansp/kite-trader#readme",
-  "dependencies": {
-    "async": "2.6.0",
-    "bluebird": "3.5.1",
-    "kiteconnect": "3.0.0-beta.3",
-    "mathjs": "4.0.0",
-    "moment": "2.21.0",
-    "underscore": "1.8.3"
-  }
+  "license": "UNLICENSED",
+  "description": "kite-trader"
 }

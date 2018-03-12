@@ -1,0 +1,21 @@
+{
+  "mysqlTransactional": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "kite_trader",
+    "password": "root",
+    "name": "mysqlTransactional",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "url": "",
+    "password": "",
+    "name": "redis",
+    "db": null,
+    "connector": "kv-redis"
+  }
+}
